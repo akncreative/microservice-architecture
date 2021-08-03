@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<groupId>com.akn.service.gateway</groupId>
+	<artifactId>AKN-Gateway-Service</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>AKN-Gateway-Service</name>
+	<description>Gateway Service</description>
+	
+	<parent>
+		<groupId>com.akn.service.parent</groupId>
+		<artifactId>akn_parent_service</artifactId>
+		<version>0.0.2-SNAPSHOT</version>
+		<relativePath>../akn_parent_service_library</relativePath>
+	</parent>
+	
+	<properties>
+		<java.version>1.8</java.version>
+		<core.service.version>0.0.1-SNAPSHOT</core.service.version>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.akn.service.core</groupId>
+			<artifactId>akn_core_service</artifactId>
+			<version>${core.service.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
